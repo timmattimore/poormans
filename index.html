@@ -1,0 +1,28 @@
+<!doctype html>
+<html ng-app>
+  <head>
+
+  </head>
+  <body>
+    <div>
+      
+      <input type="text" ng-model="color" placeholder="enter a color" />
+      <input type="text" ng-model="noun" placeholder="enter a noun" />
+      <input type="number" ng-model="dozens" placeholder="how many?" />
+      <input type="text" ng-model="piglet" placeholder="Do you like eggs?"/>
+
+
+      <hr>
+      <h1>The little <span ng-if="!color">________</span>  <span ng-if="color">{{color}}</span>
+        piglet ran into the <span ng-if="!noun">______</span> <span ng-if="color">{{noun}}</span> and made himself a little something to eat.</h1>
+      <h1>He ate <span ng-if="!dozens">____</span> <span ng-if="dozens">{{dozens}}</span> DOZENS of eggs, totalling {{(dozens) * 12}} </span> friggin' eggs!!</h1>
+
+
+      <h1>It's <span ng-if="!piglet">________</span>  <span ng-if="piglet">{{piglet === 'yes' || piglet !== 'no'}}</span> that you love eggs. </h1>
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+  </body>
+</html>
